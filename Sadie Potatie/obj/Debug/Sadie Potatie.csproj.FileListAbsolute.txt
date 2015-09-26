@@ -1,0 +1,6 @@
+C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\bin\Debug\Sadie Potatie.exe.config
+C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\bin\Debug\Sadie Potatie.exe
+C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\bin\Debug\Sadie Potatie.pdb
+C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\obj\Debug\Sadie Potatie.csprojResolveAssemblyReference.cache
+C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\obj\Debug\Sadie Potatie.exe
+C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\obj\Debug\Sadie Potatie.pdb
