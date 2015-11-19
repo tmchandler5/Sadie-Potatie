@@ -6,46 +6,51 @@ using System.Threading.Tasks;
 
 namespace Sadie_Potatie
 {
-    class DogStats
+    class SSAdminPortal
     {
         static void Main(string[] args)
         {
-            bool isSadieStinky = true;
-            short sadiesTongueLength = 2;
-            string sadiesNickname = "dog";
-            if (isSadieStinky == true)
-                Console.Write(sadiesNickname + "\n");
-            else
+            List<Citizen> citizenList = new List<Citizen>();
+            string input;
+
+            Console.WriteLine("Welcome to Social Security Administration Portal");
+            do
             {
-                sadiesNickname = "Puppy";
-                Console.WriteLine(sadiesNickname);
-            }
-            Random randomNum = new Random();
-            long treatsInTheJar = randomNum.Next(10);
-            for (int x = 0; x < treatsInTheJar; x++)
-                sadiesTongueLength++;
-            int treatsSadieHasEaten = 0;
-            while (sadiesTongueLength > 2)
-            { 
-                treatsSadieHasEaten++;
-                sadiesTongueLength--;
-                Console.WriteLine(treatsSadieHasEaten);
-            }
-            Console.WriteLine(isSadieStinky+","+sadiesTongueLength+","+sadiesNickname+","+treatsInTheJar+","+treatsSadieHasEaten);
-            Console.WriteLine("Sadie's Breath Index is " + calcBreathIndex(treatsSadieHasEaten)+" Calculated Without Turds");
-            Console.WriteLine("Sadie's Breath Index is " + calcBreathIndex(treatsSadieHasEaten, 4)+ " Calculated With Turds");
-            System.Threading.Thread.Sleep(99999);
+                Console.WriteLine("Select an option \n 1. Add Citizen \n 2. Expire Citizens \n 3. Exit Program");
+                input = Console.ReadLine();
+                while(input != "1" || input != "2" || input != "3")
+                {
+                    Console.WriteLine("Please Enter a Valid Selection");
+                    input = Console.ReadLine();
+                };
+
+                if (input == "1")
+                    citizenList.Add(promptNewCitizen());
+                else if (input == "2")
+                {
+                    Console.WriteLine("Expire How Many Citizens");
+                    input = Console.ReadLine();
+                    Citizen.expireCitizens(Int32.Parse(input));
+                } 
+                   
+
+            }while(input != "3");
         }
-        public static int calcBreathIndex(int treatsEaten)
+        public static Citizen promptNewCitizen()
         {
-            int BreathIndex = treatsEaten * 10;
-            return BreathIndex;
+            string[] names = new string[3];
+
+            Console.WriteLine("Enter First Name: ");
+            names[0] = Console.ReadLine();
+            Console.WriteLine("Enter Middle Name: ");
+            names[1] = Console.ReadLine();
+            Console.WriteLine("Enter Last Name: ");
+            names[2] = Console.ReadLine();
+
+            return new Citizen(names[0], names[1], names[2]);
         }
 
-        public static int calcBreathIndex(int treatsEaten, int turdsEaten)
-        {
-            int BreathIndex = (treatsEaten * 10) + (turdsEaten * 100);
-            return BreathIndex;
-        }
+   
+
     }
 }
