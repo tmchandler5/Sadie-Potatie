@@ -10,7 +10,7 @@ namespace Sadie_Potatie
     {
         public string firstName, middleName, lastName;
         private readonly int SSN;
-        static int SSNSeed = 0;
+        static int SSNSeed = 10000;
         static public int livingCitizenCount = 0;
 
         public Citizen(string FirstName, string MiddleName, string LastName)
@@ -22,10 +22,15 @@ namespace Sadie_Potatie
             livingCitizenCount++;
         }
 
-        public static int expireCitizens(int expirationTotal)
+        public static void expireCitizens(int expirationTotal)
         {
-            livingCitizenCount = livingCitizenCount - expirationTotal;
-            return livingCitizenCount;
+            livingCitizenCount = livingCitizenCount - expirationTotal;      
+        }
+
+        public string getSSN()
+        {
+            //return the last 4 digits of SSN as a string
+            return SSN.ToString().Substring(SSN.ToString().Length - 4);
         }
         
 
