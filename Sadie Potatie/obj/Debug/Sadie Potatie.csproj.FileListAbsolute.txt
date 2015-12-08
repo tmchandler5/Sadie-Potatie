@@ -4,3 +4,6 @@ C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\bin\Debug\Sadie Potat
 C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\obj\Debug\Sadie Potatie.csprojResolveAssemblyReference.cache
 C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\obj\Debug\Sadie Potatie.exe
 C:\Users\Jeremy\Desktop\GitHub\Sadie Potatie\Sadie Potatie\obj\Debug\Sadie Potatie.pdb
+C:\Users\tmc\Documents\Visual Studio 2015\Projects\Sadie-Potatie\Sadie Potatie\bin\Debug\Sadie Potatie.exe.config
+C:\Users\tmc\Documents\Visual Studio 2015\Projects\Sadie-Potatie\Sadie Potatie\obj\Debug\Sadie Potatie.exe
+C:\Users\tmc\Documents\Visual Studio 2015\Projects\Sadie-Potatie\Sadie Potatie\obj\Debug\Sadie Potatie.pdb

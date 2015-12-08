@@ -8,9 +8,13 @@ namespace Sadie_Potatie
 {
     public class Citizen
     {
+        //declaring variables
         public string firstName, middleName, lastName;
+        //SSN is read only so that it can not be changed
         private readonly int SSN;
+        //SSNSeed is so that it can not be changed with an instantiation of the Citizen class
         static int SSNSeed = 10000;
+        //^^^
         static public int livingCitizenCount = 0;
 
         public Citizen(string FirstName, string MiddleName, string LastName)
